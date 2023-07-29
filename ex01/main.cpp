@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:00:58 by aaslan            #+#    #+#             */
-/*   Updated: 2023/04/24 21:55:15 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 16:57:30 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,10 @@ int main()
 			phoneBook.addContact();
 		else if (command == "SEARCH")
 			phoneBook.searchContact();
-		else if (command == "EXIT")
+		else if (command == "EXIT" || std::cin.eof())
 			break;
-		else if (!std::cin.eof())
+		else
 			std::cout << "Error: unknown command, try ADD | SEARCH | EXIT" << std::endl;
-
-		if (std::cin.eof())
-			break;
 	}
 	return 0;
 }

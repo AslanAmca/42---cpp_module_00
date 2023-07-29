@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:57:07 by aaslan            #+#    #+#             */
-/*   Updated: 2023/06/27 23:40:36 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 17:01:17 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,11 @@ void PhoneBook::addContact(void)
 		if (std::cin.eof())
 		{
 			std::cout << std::endl;
-			return;
+			std::exit(0);
+		}
+		if (input == "EXIT")
+		{
+			std::exit(0);
 		}
 		if (input.empty())
 		{
@@ -57,7 +61,11 @@ void PhoneBook::addContact(void)
 		if (std::cin.eof())
 		{
 			std::cout << std::endl;
-			return;
+			std::exit(0);
+		}
+		if (input == "EXIT")
+		{
+			std::exit(0);
 		}
 		if (input.empty())
 		{
@@ -80,7 +88,11 @@ void PhoneBook::addContact(void)
 		if (std::cin.eof())
 		{
 			std::cout << std::endl;
-			return;
+			std::exit(0);
+		}
+		if (input == "EXIT")
+		{
+			std::exit(0);
 		}
 		if (input.empty())
 		{
@@ -103,7 +115,11 @@ void PhoneBook::addContact(void)
 		if (std::cin.eof())
 		{
 			std::cout << std::endl;
-			return;
+			std::exit(0);
+		}
+		if (input == "EXIT")
+		{
+			std::exit(0);
 		}
 		if (input.empty())
 		{
@@ -126,7 +142,11 @@ void PhoneBook::addContact(void)
 		if (std::cin.eof())
 		{
 			std::cout << std::endl;
-			return;
+			std::exit(0);
+		}
+		if (input == "EXIT")
+		{
+			std::exit(0);
 		}
 		if (input.empty())
 		{
@@ -177,7 +197,11 @@ void PhoneBook::searchContact(void)
 		if (std::cin.eof())
 		{
 			std::cout << std::endl;
-			return;
+			std::exit(0);
+		}
+		if (searched_index == "EXIT")
+		{
+			std::exit(0);
 		}
 		if (searched_index.empty())
 		{
@@ -213,7 +237,7 @@ int PhoneBook::getContactCount(void)
 {
 	if (contactCount < 8)
 		return contactCount;
-		
+
 	return 8;
 }
 

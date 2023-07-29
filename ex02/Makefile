@@ -6,14 +6,14 @@
 #    By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/24 11:23:19 by aaslan            #+#    #+#              #
-#    Updated: 2023/04/25 13:35:19 by aaslan           ###   ########.fr        #
+#    Updated: 2023/07/29 16:39:17 by aaslan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		:= the_job_of_your_dreams
 CXX			:= c++
 CXXFLAGS	:= -Wall -Wextra -Werror -std=c++98
-SRC			:= $(wildcard *.cpp)
+SRC			:= Account.cpp tests.cpp
 
 all: $(NAME)
 
